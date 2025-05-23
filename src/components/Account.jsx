@@ -4,18 +4,23 @@ import { Button } from 'antd';
 import { LogoutOutlined } from '@ant-design/icons';
 import Transferencia from './Transferencia';
 import HistorialTransacciones from './HistorialTransacciones';
+import ActualizarCuenta from './ActualizarCuenta';
+
 import './Account.css';
 
 
-const Account = ({ usuario, totpToken }) => {
+const Account = ({ usuario, totpToken, onActualizarUsuario  }) => {
   const { name, username, balance } = usuario;
   const navigate = useNavigate();
-
+  const [mostrarActualizar, setMostrarActualizar] = useState(false);
   const [mostrarTransferencia, setMostrarTransferencia] = useState(false);
 
-  const handleLogout = () => {
-    navigate('/');
-  };
+const handleLogout = () => {
+  localStorage.removeItem('usuario');
+  localStorage.removeItem('totpToken');
+  navigate('/');
+};
+
 
   const abrirTransferencia = () => {
     setMostrarTransferencia(true);
@@ -23,6 +28,10 @@ const Account = ({ usuario, totpToken }) => {
 
   const cerrarTransferencia = () => {
     setMostrarTransferencia(false);
+  };
+  const manejarDatosActualizados = (nuevoUsuario, nuevoToken) => {
+    onActualizarUsuario(nuevoUsuario, nuevoToken);
+    setMostrarActualizar(false); 
   };
 
   return (
@@ -38,9 +47,15 @@ const Account = ({ usuario, totpToken }) => {
         <p className="saludo">alias: {username}</p>
       </div>
 
-      <Button type="primary" className="auth-button" onClick={abrirTransferencia}>
-        Transferir
-      </Button>
+      <div className="buttonLogin-container">
+        <Button type="primary" className="auth-button" onClick={abrirTransferencia}>
+          Transferir
+        </Button>
+        <Button type="primary" className="auth-button" onClick={() => setMostrarActualizar(true)}>
+          Actualizar información
+        </Button>
+
+      </div>
 
       {/* Historial visible directamente */}
       <HistorialTransacciones username={username} totpToken={totpToken} />
@@ -50,6 +65,16 @@ const Account = ({ usuario, totpToken }) => {
           <Transferencia fromUsername={username} totpToken={totpToken} onClose={cerrarTransferencia} />
         </div>
       )}
+      {mostrarActualizar && (
+        <div className="modal-backdrop">
+          <ActualizarCuenta
+            username={username}
+            onDatosActualizados={manejarDatosActualizados}
+            onClose={() => setMostrarActualizar(false)}
+          />
+        </div>
+      )}
+
     </div>
   );
 };

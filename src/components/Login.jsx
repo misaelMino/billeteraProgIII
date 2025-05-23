@@ -67,7 +67,7 @@ const Login = ({ onLoginSuccess }) => {
     <div className="login-container">
       <img src="/assets/raulCoin.png" alt="raulCoin" className="logo-img" />
       <h1 className="auth-title">Iniciar sesión</h1>
-      <p className="auth-subtitle">Hola! Te damos la bienvenida nuevamente (:</p>
+      <p className="auth-subtitle"></p>
       <form onSubmit={handleSubmit}>
           <Input
             type="text"

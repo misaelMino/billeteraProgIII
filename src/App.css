@@ -85,8 +85,9 @@ body {
 .auth-button {
   background-color: #EFCD72 !important;
   color: #313131 !important;
-  height: 45px;
+  height: 35px;
   width: 100%;
+  margin: 5px;
   font-size: 16px;
   font-weight: 600;
   border: none !important;

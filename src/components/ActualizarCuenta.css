@@ -1,4 +1,4 @@
-.transferencia-modal {
+.modal-verificartotp {
   background-color: #16161d;
   padding: 20px;
   border-radius: 12px;
@@ -9,7 +9,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.transferencia-modal h2 {
+.modal-verificartotp h2 {
   
   font-size: 24px;
   color: #EFCD72;
@@ -18,7 +18,7 @@
   font-weight: 700;
 }
 
-.transferencia-modal label {
+.modal-verificartotp label {
   
   display: block;
   margin-top: 15px;
@@ -27,7 +27,7 @@
   color: #494949;
 }
 
-.transferencia-modal input {
+.modal-verificartotp input {
   background-color: #16161d;
   color: #8d8d8d; 
   height: 40px;
@@ -40,13 +40,13 @@
   margin-bottom: 10px;
 }
 
-.transferencia-modal input:focus {
+.modal-verificartotp input:focus {
   
   border-color: #EFCD72;
   outline: none;
 }
 
-.transferencia-modal button {
+.modal-verificartotp button {
   height: 45px;
   width: 48%;
   font-size: 16px;
@@ -58,22 +58,22 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-.transferencia-modal button:first-of-type {
+.modal-verificartotp button:first-of-type {
   background-color: #EFCD72;
   color: #494949;
   margin-right: 4%;
 }
 
-.transferencia-modal button:first-of-type:hover {
+.modal-verificartotp button:first-of-type:hover {
   background-color: #d9b75d;
 }
 
-.transferencia-modal button:last-of-type {
+.modal-verificartotp button:last-of-type {
   background-color: #e0e0e0;
   color: #494949;
 }
 
-.transferencia-modal button:last-of-type:hover {
+.modal-verificartotp button:last-of-type:hover {
   background-color: #c7c7c7;
 }
 

@@ -39,13 +39,14 @@
   font-size: 18px;
   font-weight: 600;
   color: #bbbbbb;
+  min-width: 130px;
 }
 
 .descripcion {
   font-size: 18px;
   font-weight: 600;
   color: #bbbbbb;
-  padding-left: 20px;
+  /* padding-left: 50px; */
 }
 
 .tipo-indicador {
