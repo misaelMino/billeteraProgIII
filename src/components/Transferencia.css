@@ -1,0 +1,97 @@
+/* Transferencia.css */
+
+
+
+.transferencia-modal {
+  background-color: #16161d;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.transferencia-modal h2 {
+  
+  font-size: 24px;
+  color: #EFCD72;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.transferencia-modal label {
+  
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #494949;
+}
+
+.transferencia-modal input {
+  background-color: #16161d;
+  color: #8d8d8d; 
+  height: 40px;
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #EFCD72;
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.transferencia-modal input:focus {
+  
+  border-color: #EFCD72;
+  outline: none;
+}
+
+.transferencia-modal button {
+  height: 45px;
+  width: 48%;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.transferencia-modal button:first-of-type {
+  background-color: #EFCD72;
+  color: #494949;
+  margin-right: 4%;
+}
+
+.transferencia-modal button:first-of-type:hover {
+  background-color: #d9b75d;
+}
+
+.transferencia-modal button:last-of-type {
+  background-color: #e0e0e0;
+  color: #494949;
+}
+
+.transferencia-modal button:last-of-type:hover {
+  background-color: #c7c7c7;
+}
+
+/* Fondo oscuro del modal */
+.modal-backdrop {
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.96);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}

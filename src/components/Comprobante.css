@@ -1,0 +1,65 @@
+/* Comprobante.css */
+.login-input:hover {
+  background-color: #16161d;
+  border: 1px solid #EFCD72;
+  color: #8d8d8d; 
+  border-radius: 6px;
+}
+.modal {
+  background-color: #16161d;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal h2 {
+  font-size: 22px;
+  color: #28a745;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.modal p {
+  font-size: 15px;
+  color: #bebebe;
+  margin: 8px 0;
+}
+
+.modal p strong {
+  color: #7a7979;
+}
+
+.modal button {
+  height: 45px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #EFCD72;
+  color: #494949;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.modal button:hover {
+  background-color: #d9b75d;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

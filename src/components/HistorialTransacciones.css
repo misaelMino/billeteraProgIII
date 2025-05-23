@@ -1,0 +1,78 @@
+.historial-container {
+  margin-top: 30px;
+}
+
+.historial-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #EFCD72;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transaccion {
+  border: 1px solid #EFCD72;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #16161d;
+}
+
+.transaccion:hover {
+  background-color: #474747;
+}
+
+.transaccion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monto-descripcion {
+  display: flex;
+  flex-direction: row;
+}
+
+.monto {
+  font-size: 18px;
+  font-weight: 600;
+  color: #bbbbbb;
+}
+
+.descripcion {
+  font-size: 18px;
+  font-weight: 600;
+  color: #bbbbbb;
+  padding-left: 20px;
+}
+
+.tipo-indicador {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.color-sent {
+  background-color: #e74c3c;
+}
+
+.color-received {
+  background-color: #2ecc71;
+}
+
+.color-awarded {
+  background-color: #f1c40f;
+}
+
+.transaccion-detalle {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.error-text {
+  color: red;
+  text-align: center;
+}
